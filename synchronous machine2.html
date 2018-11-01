@@ -3,17 +3,36 @@
 <head>
 <title>electronics</title>
 <meta charset="utf-8">
-<style media="screen">
-*{
-  font-size: 16px;
-}
+<style >
+  *{
+    font-size:20px;
+  }
   a{
     color:green;
+    font-size:50px;
+    text-align:center;
   }
-  h1{font-size:50px;
-     text-align:center;
+
   }
   .a{
+    text-align: left;
+    font-style: normal;
+
+  }
+  .b{
+    text-align: left;
+    font-style: normal;
+
+  }
+  .c{
+    text-align: left;
+    font-style: normal;
+  }
+  .d{
+    text-align: left;
+    font-style: normal;
+  }
+  .e{
     text-align: left;
     font-style: normal;
   }
@@ -23,28 +42,31 @@
   }
 </style>
 
-<h1><a href="Index.html">My Study Room</a></h1>
-<hr size=1 width=100% align=center color=black>
 
 </head>
 
-
 <body style="background-color:lightgrey;">
+
+  <h1><a href="Index.html">My Study Room</a></h1>
+  <hr size=1 width=100% align=center color=black>
   <br>
     <strong><u>동기기 2입니다.</u></strong>
   <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IU3FZ4xWWC4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<pre>
 
 
 
-  요약
-  1.두개의 축모델의 소개
-  2. park's transformation
-  3.voltage equation in dq0 frame
-  4. equivalent circuit for two-axis model
-  5.subtransient and transient reactance
 
+  <ol>
+
+
+  <strong>요약</strong>
+  <li>두개의 축모델의 소개</li>
+  <li> park's transformation</li>
+  <li>voltage equation in dq0 frame</li>
+  <li> equivalent circuit for two-axis model</li>
+  <li>subtransient and transient reactance</li>
+</ol>
   <div class="a">
 
 
@@ -66,11 +88,11 @@
 
 
 
-  <img src="img/syn2/1.pole rotor.jpg" width="500">
+  <img src="img/syn2/1.pole rotor.jpg" width="500px" height="300px"/>
 
 
 
-
+  <div class="b">
   그림에서 돌극형기계는 보는것과같이 4개의 돌극을 가지고있어
   north south pole. 네개의 극이 있고 극에는 권선도 감겨져있어.
   그리고 a상 a'상 b상 b' 상  c상 c'상 이있는데 120도 씩차이가나지.
@@ -94,16 +116,16 @@
   그래서, 이건 돌극형기기의 물리적인측면이고
   이제부터 이기기에서 우리는
   쇄교자속방정식(flux linkage equation) 쓸거고 회로 모델도 만들거야.
+  </div>
+
+
+
+  <img src="img/syn2/2.flux linkage.jpg" width="500px" height="300px"/>
 
 
 
 
-  <img src="img/syn2/2.flux linkage.jpg" width="500">
-
-
-
-
-
+  <div class="c">
   일단 위그림 보면 기기의 각상에는 자기인덕턴스가있고
   각상 사이의 상호인덕턴스가 있으며 고정자와 회전자사이의 상호인덕턴스도 있어.
   이러한 인덕턴스들은 Laa, Lab,Lac,Laf 이 모든 인덕턴스는
@@ -130,17 +152,17 @@
   여기서 그러면 만약 회전자가 회전할경우 극과 고정자의 특정상 사이의 거리가 멀어졌다
   가까워졌다 할테니 공극도 계속 변한다 공극이 변한다는것은 상호인덕턴스도 변한다는 것이다
    즉 시변의값이다)
+ </div>
+
+
+
+  <img src="img/syn2/3.stator's self inductance.jpg" width="500px" height="300px"/>
 
 
 
 
-  <img src="img/syn2/3.stator's self inductance.jpg" width="500">
 
-
-
-
-
-
+  <div class="d">
   그리고 자기인덕턴스는 위 그림의 공식과 같다.
 
   Ls =(Lmax+Lmin)/2        Lm= (Lmax-Lmin)/2
@@ -149,16 +171,25 @@
 
   그러므로  자기인덕턴스도 시변값이다.
 
+  </div>
 
 
 
-  <img src="img/syn2/4.stator's mutual inductance.jpg" width="500">
+  <img src="img/syn2/4.stator's mutual inductance.jpg" width="500px" height="300px"/>
 
+
+  <div class="e">
 
 
   비슷하게 위와같이 고정자 권선사이의 상호임피던스도 시변값이다.
+<br>
 
-  <img src="img/syn2/5.rotor's self,mutual inductance.jpg" width="500">
+
+
+
+  <img src="img/syn2/5.rotor's self,mutual inductance.jpg" width="500px" height="300px"/>
+
+<p>
 
   그리고 로터의 자기인덕턴스는 말했듯이 불변이다.
 
@@ -186,13 +217,15 @@
   그래서 mr은 불변이다. q축과 계자권선사이의 상호인덕턴스는 0 다 왜냐면
   q축의 인덕턴스는 횡축에있다. 또한 직축횡축 사이도 0이다. 두개사이의 90도의
   위상차가있기떄문에 상호임피던스가 0다.
+</p>
+
+  </div>
 
 
 
 
 
 
-</pre>
 
 
 
