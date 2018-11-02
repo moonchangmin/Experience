@@ -1,106 +1,132 @@
-<!doctype>
+<!doctype html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Hyper Text Mutual Language</title>
-  <style>
-    a{
-      color:green;
-    }
-    h1{font-size:50px;
-      text-align:center;
-    }
-    p{background-color:green; }
-  </style>
-  <h1><a href="Index.html">My Study Room</a></h1>
-  <hr size=1 width=100% align=center color=black>
+<title>html지식</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
 </head>
 
 
 <body style="background-color:lightgrey;">
 
-<pre>
-지금 까지배운 태그
-
--strong : 글자 진하게 하기.
-
-u : underline  밑줄긋기
-
-h1~ h6 -> 가장 큰제목부터 가장작은제목까지 만들수있음
-
-br : 줄바꿈
-p  : 단락 만들기.
-
-
--사진을 불러오고싶을떄의 태그
-
-img src="사진이름"width="100%"
-태그만으로는 정보가 부족할수가 있다.
-그럴때 속성이라는것을 써야하는데 순서는 상관없다 . 여기서 속성은 src="",width=""가 된다.
 
 
 
-
-리스트를 만들고 싶을때 쓰는 태그들-
-
-li  list 만드는 태그
-ul unordered list : 리스트의 부모태그(앞에 숫자를 넣지않는다)
-ol ordered list    : 리스트의 부모태그 ( 숫자를넣는다)
+<h1><a href="Index.html">Room</a></h1>
+  <div id="grid">
 
 
--태그의 스타들-
+      <div>
 
-!doctype html : 관용적으로 모든것의 위에 적는다
-html : 모든 것의 관리자 같은역할 처음과 끝에 적어준다.
-head: 내용이 어떤것인지를 설명하는 녀석
-body: 본문을 나타낸다.
-meta charset="utf-8>   : utf-8 로 읽겠다..   ( 한글이 안깨진다)
+        <h2>지금 까지배운 태그</h2>
+
+          <li>strong : 글자 진하게 하기.</li>
+          <li>u : underline  밑줄긋기</li>
+          <li>h1~ h6 -> 가장 큰제목부터 가장작은제목까지 만들수있음</li>
+
+          <li>br : 줄바꿈</li>
+          <li>p  : 단락 만들기.</li>
+        </ul>
+
+        -사진을 불러오고싶을떄의 태그
+
+        img src="사진이름"width="100%"
+        태그만으로는 정보가 부족할수가 있다.
+        그럴때 속성이라는것을 써야하는데 순서는 상관없다 . 여기서 속성은 src="",width=""가 된다.
 
 
 
 
--링크를 걸고싶을때-
+        리스트를 만들고 싶을때 쓰는 태그들-
 
-hyper text
-
-a --> 링크쓰고싶은 곳 앞뒤에 쓰기
-                 정보가 부족함
-                 옵션이 붙어야한다.
+        li  list 만드는 태그
+        ul unordered list : 리스트의 부모태그(앞에 숫자를 넣지않는다)
+        ol ordered list    : 리스트의 부모태그 ( 숫자를넣는다)
 
 
-옵션으로는       hyper reference : href="" 에 경로를 넣고
-             target=""을 _blank 해주면 새창으로 띄우게된다.
-             title=""옵션을 넣을시 커서를 링크에 댈시 어떤건지를 나타내준다.
+        -태그의 스타들-
 
-
-  iframe> src="" width="" height="" </iframe>
-  여기에 소스를 넣고 가로 세로 넣고 동영상삽입가능.
-</pre>
+        !doctype html : 관용적으로 모든것의 위에 적는다
+        html : 모든 것의 관리자 같은역할 처음과 끝에 적어준다.
+        head: 내용이 어떤것인지를 설명하는 녀석
+        body: 본문을 나타낸다.
+        meta charset="utf-8>   : utf-8 로 읽겠다..   ( 한글이 안깨진다)
 
 
 
----<strong>Css</strong>
 
-<br>
-style 을 쓰면 html 에게 '나는 이제 css를 쓸 거야' 라고 말하는것
-<br>head 쪽에 style을 써서 <font color="red">선택자내의 property 값에다가 value</font>를 넣어준다.
-<br>아니면 따로 따로 넣으려면 따로 넣을수도있다.
-<br>예를 들면 제목 h1에 넣고 싶다면 스타일에 다가 선택자 h1을 넣어서
-<br>h1{} 저 사이에다가 property 는 value 다 라는 식의 문법이다.
-<br><br>
-property 목록 : align(정렬하기) font-size(폰트 픽셀조절)
-<br>
-tag선택자 < class 선택자  < id 선택자
-   a           .a           #a
-   <br>
-    선택자가 모두 같을경우 가장 마지막에 나타난 선택자가 우선순위가 높다.
-<br>id의 값은 단 한번만 등장해야한다.
+        -링크를 걸고싶을때-
+
+        hyper text
+
+        a --> 링크쓰고싶은 곳 앞뒤에 쓰기
+                         정보가 부족함
+                         옵션이 붙어야한다.
 
 
-<p>https://www.advancedwebranking.com/  -> 태그의 빈도수 보는 페이지
-<br>https://dashboard.tawk.to/#/dashboard 채팅소스 공유하는 페이지.
-<br>https://disqus.com/  댓글 소스 공유
-</p>
+        옵션으로는       hyper reference : href="" 에 경로를 넣고
+                     target=""을 _blank 해주면 새창으로 띄우게된다.
+                     title=""옵션을 넣을시 커서를 링크에 댈시 어떤건지를 나타내준다.
+
+
+          iframe> src="" width="" height="" </iframe>
+          여기에 소스를 넣고 가로 세로 넣고 동영상삽입가능.
+        </pre>
+
+
+
+        ---<strong>Css</strong>
+
+        <pre>
+        style 을 쓰면 html 에게 '나는 이제 css를 쓸 거야' 라고 말하는것
+        head 쪽에 style을 써서 <mark>선택자내의 property 값에다가 value</mark>를 넣어준다.
+        아니면 따로 따로 넣으려면 따로 넣을수도있다.
+        예를 들면 제목 h1에 넣고 싶다면 스타일에 다가 선택자 h1을 넣어서
+        h1{} 저 사이에다가 property 는 value 다 라는 식의 문법이다.
+
+        property 목록 : align(정렬하기) font-size(폰트 픽셀조절)
+
+        tag선택자 < class 선택자  < id 선택자
+           a           .a           #a
+
+        선택자가 모두 같을경우 가장 마지막에 나타난 선택자가 우선순위가 높다.
+        id의 값은 단 한번만 등장해야한다.
+        </pre>
+        <p>div는 어떤것을 하나의 클래스로 잡기위한 아무의미없는 태그이다.주로 디자인을위해사용된다.</p>
+        <p>display기능 : block 과 inline, none 세개로 이루어져 있으며
+                        block은 페이지 전체쓰기,
+                        inline은 그글자 크기만큼쓰기
+                        none은 안쓰는거다.</p>
+        <p>div는 block이고 span은 inline이다. 즉 div는 한블럭 전체를 쓰고
+        span은 자기 크기만큼만 쓴다.
+        <p>@media 쿼리 -> 반응형 디자인을 뜻한다.
+        즉 어떠한 조건안에서 어떠한 조건이 이루어지는것을말한다.
+        예를 들어 screen > 800px 일때 어떤게 보이게 하고싶다.</p>
+
+
+        </p>
+        <p>https://www.advancedwebranking.com/  -> 태그의 빈도수 보는 페이지
+        <br>https://dashboard.tawk.to/#/dashboard 채팅소스 공유하는 페이지.
+        <br>https://disqus.com/  댓글 소스 공유
+        caniuse.com --> 기능을 써도될지안될지 알아보는사이트
+        </p>
+
+        </div>
+
+
+
+
+        <nav class="content">
+          <ul>
+            <li><strong><a href="hyper text mutual langage.html">html에 관해서 배운것들</a></strong></li>
+            <li><strong><a href="전기.html">전기</a></strong></li>
+            <li><strong><a href="itbank.html">학원에서 배운것들</a></strong></li>
+          </ul>
+        </nav>
+
+
+  </div>
 
 </body>
 </html>
